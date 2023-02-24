@@ -1,7 +1,4 @@
-import { useLocation, Navigate, Outlet } from "react-router-dom";
-import axios from "./../../axios";
-import { useEffect, useState } from "react";
-import LoginPage from "./../userInfo/LoginPage";
+import { Navigate, Outlet } from "react-router-dom";
 
 function AuthController(props) {
 

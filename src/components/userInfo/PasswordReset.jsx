@@ -4,7 +4,7 @@ import { useRef } from "react";
 import axios from "./../../axios";
 import { useParams } from "react-router-dom";
 import { showAlert } from "./../alerts";
-import { hideAlert } from "./../alerts";
+// import { hideAlert } from "./../alerts";
 
 function PasswordReset() {
   const params = useParams().token;

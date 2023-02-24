@@ -11,7 +11,7 @@ function Features(props) {
     <div className="features--cards">
       <div className="feature--card">
         {/* <img src={`https://estate-project-backend.herokuapp.com/public/img/apartments/${props.coverPhoto}`} alt="" /> */}
-        <img src={`https://localhost:8001/public/img/apartments/${props.coverPhoto}`} alt="" />
+        <img src={`https://aparweb-backend.onrender.com/public/img/apartments${props.coverPhoto}`} alt="" />
         <div className="property--content">
           <div className="property--head">
             <div className="feature--properties">
