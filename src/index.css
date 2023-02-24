@@ -1,0 +1,49 @@
+:root {
+  --accent-color: rgb(17, 51, 204);
+  --background-color: rgb(17, 51, 204);
+  --text-color-lighten: rgb(240, 240, 240);
+  --text-color-darken: #555;
+  --shadow-color: rgba(121, 153, 158, 0.219);
+  --star-color: rgb(255, 153, 0);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+ font-family: 'Poppins', sans-serif;
+ font-weight: 400;
+ font-size: 14.5px;
+ /* color: rgb(31, 31, 31); */
+}
+button{
+  cursor: pointer;
+}
+.alert--error{
+  background-color: rgb(219, 41, 41);
+  color: var(--text-color-lighten);
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 0 0 5px 5px;
+}
+.alert--success{
+   background-color: rgb(24, 177, 131);
+  color: var(--text-color-lighten);
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 0 0 5px 5px;
+}
+.alert{
+  width: 50%;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+@media only screen and (max-width:767px){
+  .alert{
+    width: 90%;
+  }
+}

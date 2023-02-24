@@ -1,0 +1,118 @@
+.product--img--card img{
+width: 100%;
+border-radius: 10px;
+}
+
+
+.description--content{
+    grid-column: 1/3;
+}
+.p-d-name-price,
+.p-d-loc-rating{
+display: flex;
+justify-content: space-between;
+gap: 10px;
+margin-top: 10px;
+}
+
+.p-d-loc-rating .rating--icon{
+    color: var(--star-color);
+}
+.product--desc--details .description--sec{
+margin-top: 5%;
+}
+.product--desc--details .description--sec p{
+    padding: 10px 0;
+}
+.product--desc--details .icons--area{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+.product--desc--details .icon{
+    color: var(--accent-color);
+    background-color: var(--shadow-color);
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    align-content: center;
+}
+.rent--button a{
+text-decoration: none;
+padding: 8px 20px;
+background-color: var(--background-color);
+color: var(--text-color-lighten);
+border-radius: 10px;
+}
+.rent--button{
+    margin-top: 1.5rem;
+}
+.navbar--styled{
+  padding: 10px 20px;
+  background-color: rgba(10, 18, 27, 0.925);
+}
+.product--contact{
+    margin: 5% 0;
+    padding: 20px;
+    margin-bottom: 10%;
+}
+.product--contact img{
+    width: 100%;
+    border-radius: 10px;
+}
+.product--contact input{
+    width: 100%;
+    border: none;
+    border: 1px solid var(--shadow-color);
+    padding: 13px;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+.product--contact button{
+    border: none;
+    background-color: var(--background-color);
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: var(--text-color-lighten);
+    margin-bottom: 5%;
+}
+
+@media only screen and (min-width:767px){
+.product--contact{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+.full--description--and--sidebar{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 2rem;
+}
+}
+@media only screen and (max-width:767px){
+    .product-description-sidebar{
+    margin-top: 15%;
+}
+}
+.product--contact .request--call--product{
+    margin-top: 10%;
+}
+.full--description--and--sidebar{
+margin: 5% 0;
+padding: 20px;
+}
+.product-description-sidebar .feature--card{
+margin-bottom: 2rem;
+}
+.product-description-sidebar h2{
+    padding: 10px 0;
+}
+.gallery--slider img{
+    width: 100%;
+    height: 400px;
+}

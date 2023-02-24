@@ -1,0 +1,140 @@
+*:focus {
+  outline: none;
+}
+.filter--box input[type="search"] {
+  width: 40%;
+  padding: 10px;
+}
+
+.filter--box select {
+  padding: 10px;
+  width: 40%;
+}
+.filter--box {
+  box-shadow: 0 0 10px var(--shadow-color);
+  padding: 1rem;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 8%;
+}
+.filter--box input,
+.filter--box select {
+  margin: 0 1rem;
+  border: none;
+  border: 1px solid var(--shadow-color);
+  border-radius: 5px;
+}
+.filter--box button,
+.filter--info button {
+  border: none;
+  background-color: var(--background-color);
+  color: var(--text-color-lighten);
+  border-radius: 20px;
+  padding: 0.8rem 2rem;
+  cursor: pointer;
+}
+.filter--info button{
+    padding: 0.7rem 2rem;
+}
+.filter--sidebar--and--products {
+    margin: 0 auto;
+    margin-top: 5%;
+    padding: 20px;
+}
+.filter--sidebar{
+  margin-bottom: 15%;
+}
+@media only screen and (min-width:767px){
+  .filter--box{
+      border-radius: 50px;
+  }
+  /* .filter--sidebar--and--products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+        width: 90%;
+} */
+.products--area .product--cards{
+  padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+}
+@media only screen and (max-width:767px){
+  .filter--box{
+    border-radius: 10px;
+  }
+  .products--area .product--cards{
+    margin-bottom: 5%;
+    display: grid;
+    gap: 30px;
+  }
+  .filter--box button{
+margin-left: 6%;
+  }
+  .filter--box input[type="search"] {
+  width: 90%;
+  margin-bottom: 1rem;
+}
+.filter--box input[type="date"] {
+  width: 90%;
+  margin-bottom: 1rem;
+}
+.filter--box select {
+  width: 90%;
+  margin-bottom: 1rem;
+}
+}
+.filter--sidebar--and--products .products--area {
+  grid-column: 2/5;
+}
+.filter--info input{
+    margin-bottom: 1rem;
+    width: 100%;
+    border: none;
+    border: 1px solid var(--shadow-color);
+    border-radius: 5px;
+}
+.filter--info input[type="search"]{
+    padding: 10px;
+}
+.filter--info select{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: none;
+    border: 1px solid var(--shadow-color);
+    border-radius: 5px;
+}
+.filter--info{
+    background-color: var(--shadow-color);
+    padding: 20px;
+}
+.filter--sidebar h3{
+    padding: 10px 0;
+}
+
+.product--cards .view--details{
+    padding-top: 10px;
+}
+.stars--and--loc{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar--styled{
+  padding: 10px 20px;
+  background-color: rgba(10, 18, 27, 0.925);
+}
+.pagination button{
+  padding: 5px 10px;
+  border: none;
+  border: 1px solid var(--shadow-color);
+}
+.pagination{
+  margin-top: 2rem;
+}
+.pagination button:active,
+.pagination button:hover{
+background-color: gray;
+}

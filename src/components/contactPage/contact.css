@@ -1,0 +1,35 @@
+.contact--information{
+margin: 6% auto;
+width: 90%;
+}
+.contact--information .form--sec input,
+.contact--information .form--sec textarea{
+width: 100%;
+padding: 13px;
+border-radius: 10px;
+margin-bottom: 2rem;
+border: none;
+border: 1px solid var(--shadow-color);
+}
+.contact--information .form--sec button{
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--background-color);
+    color: var(--text-color-lighten);
+    border-radius: 10px;
+    margin-bottom: 5%;
+}
+
+@media only screen and (min-width: 767px){
+.contact--information{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+}
+.contact--information .form--sec{
+    grid-column: 2/-1;
+}
+.contact--information .contact--description{
+    margin: 10% 0;
+}

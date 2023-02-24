@@ -1,0 +1,125 @@
+.login--section input,
+.forgot--password--section input,
+.reset--password--section input,
+.signup--section input {
+  padding: 13px;
+  width: 100%;
+  border: none;
+  border: 1px solid var(--shadow-color);
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+.login--section,
+.forgot--password--section,
+.reset--password--section,
+.signup--section {
+  margin: 10% auto;
+  padding: 5%;
+  max-width: 60%;
+  box-shadow: 0 0 15px rgb(96, 172, 207);
+}
+@media only screen and (max-width:767px){
+
+  .login--section,
+.forgot--password--section,
+.reset--password--section,
+.signup--section{
+  max-width: 100%;
+  padding: 3rem 2rem;
+  margin: 4rem 20px;
+}
+.user--profile--area .userInfo form{
+  flex-wrap: wrap;
+}
+}
+.login--section button,
+.forgot--password--section button,
+.reset--password--section button,
+.signup--section button {
+  padding: 10px;
+  border: none;
+  padding: 10px 20px;
+  background-color: var(--background-color);
+  color: var(--text-color-lighten);
+  border-radius: 10px;
+}
+h2 {
+  padding: 0 0 20px 0;
+}
+.reset--link {
+  padding: 10px 0;
+}
+.reset--link a {
+  text-decoration: none;
+  color: var(--accent-color);
+}
+
+
+ .userProfile--and--slider{
+    padding:10px 0;
+  margin-bottom: 5%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.user--profile--area{
+grid-column: 2/-1;
+padding: 1rem;
+}
+/* nav ul li a:link,
+nav ul li a:visited{
+  color: #555
+} */
+.user--profile--area .userInfo form{
+  display: flex;
+}
+.user--profile--area input{
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border: 1px solid var(--shadow-color);
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+.user--profile--area input[type="file"]{
+  visibility: hidden;
+}
+.user--profile--area .file--label{
+  padding: 10px 15px;
+  background-color: var(--background-color);
+  color: var(--text-color-lighten);
+  border-radius: 10px;
+}
+.user--profile--area img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid var(--shadow-color);
+  padding: 5px;
+  margin-bottom: 10%;
+}
+.user--profile--area .form--group{
+  text-align: center;
+}
+.userPassword--info input{
+width: 100%;
+}
+.user--profile--area{
+  width: 90%;
+}
+.user--profile--area h3{
+  padding-bottom: 5%;
+}
+.user--profile--area button{
+  padding: 10px 15px;
+  border: none;
+  background-color: var(--background-color);
+  color: var(--text-color-lighten);
+  border-radius: 10px;
+  margin-bottom: 5%;
+}
+.navbar--styled{
+  padding: 10px 20px;
+  background-color: rgba(10, 18, 27, 0.925);
+}

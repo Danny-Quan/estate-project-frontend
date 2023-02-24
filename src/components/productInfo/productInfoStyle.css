@@ -1,0 +1,266 @@
+.sidebar--items li {
+  list-style: none;
+  padding: 5px 5px;
+}
+@media only screen and (max-width: 767px) {
+  .create--product--area{
+    overflow-x: auto;
+    width: 160%;
+  }
+}
+.sidebar--items li a:link,
+.sidebar--items li a:visited {
+  text-decoration: none;
+  color: var(--text-color-lighten);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.sidebar--items li a:hover,
+.sidebar--items li a:active {
+  background-color: #fff;
+  color: var(--accent-color);
+}
+
+.admin--sidebar {
+  background-color: var(--background-color);
+  height: 100%;
+  width: 100%;
+  padding: 3rem 1rem 2rem 1rem;
+  margin-top: -10px;
+}
+.dashboard--and--sidebar,
+.create--product--and--slider,
+.userProfile--and--slider,
+.stats--and--sidebar,
+.editProduct--and--sidebar,
+.sidebar--and--apartmentSettings,
+.admin--info--and--sidebar {
+  padding: 10px 0;
+  margin-bottom: 5%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+@media only screen and (min-width: 767px) {
+}
+.create--product--and--slider input,
+.create--product--and--slider textarea,
+.editProduct--area input,
+.editProduct--area textarea {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border: 1px solid var(--shadow-color);
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+.create--product--and--slider input[type="file"],
+.editProduct--area input[type="file"] {
+  width: 100%;
+  border: none;
+  display: block;
+  display: none;
+}
+.create--product--area label,
+.editProduct--area label {
+  background-color: var(--shadow-color);
+  padding: 10px;
+  /* color: var(--text-color-lighten); */
+  margin: 10px 20px 20px 0;
+  cursor: pointer;
+}
+.create--product--area,
+.apartment--settings {
+  max-height: 100vh;
+  overflow-y: auto;
+  margin-bottom: 5%;
+}
+
+.create--product--and--slider select,
+.editProduct--area select {
+  width: 40%;
+  padding: 13px;
+  border: none;
+  border: 1px solid var(--shadow-color);
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  margin-right: 4rem;
+}
+.dashboard--area,
+.create--product--area,
+.user--profile--area,
+.statistics--area,
+.editProduct--area,
+.apartment--settings,
+.admin--info--section {
+  grid-column: 2/-1;
+  padding: 1rem;
+  /* max-height: 100vh;
+  overflow-y: auto; */
+}
+
+.navbar--styled {
+  padding: 10px 20px;
+  background-color: rgba(10, 18, 27, 0.925);
+}
+.admin--sidebar .user--photo--name img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 5px solid var(--text-color-lighten);
+  margin-bottom: 5px;
+}
+.admin--sidebar .user--photo--name a {
+  text-decoration: none;
+  color: var(--text-color-lighten);
+  text-transform: capitalize;
+}
+.admin--sidebar .user--photo--name {
+  padding-left: 1rem;
+  margin-bottom: 5%;
+}
+.create--product--area button,
+.editProduct--area button {
+  padding: 10px 15px;
+  border: none;
+  background-color: var(--background-color);
+  color: var(--text-color-lighten);
+  border-radius: 10px;
+  margin: 5% 0;
+  display: block;
+}
+.dashboard--area table thead th {
+  padding: 10px;
+  text-align: left;
+}
+.dashboard--area table tbody {
+  margin: 20px 0;
+}
+.dashboard--area table td {
+  padding: 10px;
+}
+.dashboard--area table {
+  border: 1px solid var(--shadow-color);
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+.dashboard--area table thead > tr {
+  background-color: rgba(152, 224, 202, 0.753);
+}
+.dashboard--area table tbody > tr {
+  margin: 20px 0;
+  border: 1px solid var(--shadow-color);
+}
+.dashboard--area {
+  width: 98%;
+  overflow: auto;
+  height: 100vh;
+  margin-bottom: 5%;
+}
+.dashboard--area input {
+  padding: 10px;
+  border: none;
+  border: 1px solid var(--shadow-color);
+  border-radius: 10px;
+  margin: 10px 0;
+  width: 30%;
+}
+.action--btns {
+  display: flex;
+  gap: 5px;
+}
+/***********************/
+.apartment--settings {
+  margin: 5% 0;
+}
+.apartment--settings--card img {
+  width: 80%;
+}
+.apartment--settings--card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px var(--shadow-color);
+  margin-bottom: 1rem;
+}
+.apartment--settings--card input[type="text"] {
+  display: none;
+}
+.info--info {
+  grid-column: 2/-1;
+}
+.apartment--settings--card input[type="file"] {
+  display: none;
+}
+.apartment--settings--card .upload--label {
+  padding: 10px;
+  background-color: var(--shadow-color);
+}
+.apartment--settings--card button {
+  background-color: var(--background-color);
+  color: var(--text-color-lighten);
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+.apartment--settings--card form {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  align-items: center;
+}
+/* .apartment--settings{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+} */
+
+@media only screen and (min-width: 767px) {
+  .product--stat--divs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+  .product--stat--divs {
+    display: grid;
+    gap: 2rem;
+  }
+.number--of--newlyAdded--apartments,
+.number--of--unrented--apartments,
+.number--of--rented--apartments,
+.number--of--apartments {
+  background: linear-gradient(to right, rgb(10, 85, 134), rgb(0, 174, 255));
+  padding: 2rem;
+  height: 200px;
+  border-radius: 10px;
+  color: var(--text-color-lighten);
+}
+
+.product--stat--divs h1 {
+
+}
+
+.myLabel{
+  width: 100px;
+  height: 100px;
+  padding: 3rem;
+  display: block;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.image--labels{
+display: flex;
+}
+
+@media only screen and (max-width:767px){
+  .admin--sidebar{
+    display: none;
+  }
+}

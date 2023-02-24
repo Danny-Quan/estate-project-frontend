@@ -1,0 +1,264 @@
+.info{
+    text-align: center;
+}
+/* .feature--card .property--head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+.feature--card .property--name--location{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding-bottom: 5px;
+}
+.star--loc .rating--icon{
+    color: rgb(255, 153, 0);
+}
+.feature--card .feature--properties .star--loc{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.property--content .property--footer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+}
+.features--cards--container{
+    gap: 2rem;
+    width: 90%;
+    margin: 3rem auto;
+}
+.section--2 .info{
+    padding: 10px;
+}
+.about--section{
+    padding: 20px;
+    margin: 5% 0;
+    margin-bottom: 10%;
+}
+.feature--card{
+    box-shadow: 5px 5px 10px var(--shadow-color);
+    border-radius: 10px;
+}
+.property--summary{
+    margin: 15px 0;
+}
+.feature--card img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.property--content{
+    padding: 10px 20px 20px 20px;
+}
+.property--content .property--price{
+color: var(--accent-color);
+}
+.property--content .icon{
+    color:var(--accent-color);
+    margin: 0 5px 0 0;
+}
+.icon--text{
+    color: var(--text-color-darken);
+}
+.view--details{
+    text-decoration: none;
+    color: #000;
+    background-color: var(--shadow-color);
+    padding:7px 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+.load--more--btn{
+    text-align: center;
+}
+
+.subscribe--section{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.subscribe--section input{
+    width: 80%;
+    padding: 15px 10rem 15px 15px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.144);
+    outline: none;
+    border-radius: 20px;
+}
+.subscribe--section button{
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--background-color);
+    color: var(--text-color-lighten);
+}
+.subscribe--section form{
+    position: relative;
+}
+.subscribe--section button{
+    position: absolute;
+    right: 11%;
+    top: 11%;
+    cursor: pointer;
+}
+.subscribe--section h2{
+    padding: 10px 0;
+}
+.subscribe--section p{
+    padding-bottom: 25px;
+}
+.footer--section{
+    position: relative;
+    background-color: var(--background-color);
+    padding: 5%;
+
+    color: var(--text-color-lighten);
+}
+@media only screen and (min-width:767px){
+    .features--cards--container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+    .footer--section{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 2rem;
+    }
+    .review--header{
+    width: 40%;
+}
+.reviews{
+    width: 85%;
+    padding: 50px 20px;
+}
+}
+
+.footer--section::before{
+    content: '';
+    display: block;
+    background-color: var(--background-color);
+    width: 100%;
+    height: 150px;
+    transform: skewY(5deg);
+    transform-origin: right;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    z-index: -1;
+}
+footer{
+    margin-top: 5%;
+}
+footer h3{
+    padding: 10px 0;
+}
+footer h3{
+    padding: 15px 0;
+}
+footer p{
+    padding: 10px 0;
+}
+footer a:link,
+footer a:visited{
+    text-decoration: none;
+    color: var(--text-color-lighten);
+}
+footer li{
+    list-style: none;
+    padding: 5px 0;
+}
+footer .social--links li{
+    display: inline-block;
+    padding: 10px;
+    font-size: 18px;
+}
+footer .social--links li:nth-child(1){
+    padding-left: 0;
+}
+footer .copyright{
+    text-align: center;
+}
+.section--review{
+    padding: 20px;
+}
+.reviews{
+margin: 0 auto;
+margin-top: 10%;
+position: relative;
+overflow-x: hidden;
+}
+.review--card{
+    box-shadow: 5px 0 10px var(--shadow-color);
+    padding: 25px;
+    border-radius: 5px;
+}
+.review--card .rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.review--card p{
+    padding: 15px 0;
+}
+.review--card img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    top: -20%;
+    right: 40%;
+}
+.review--card .icon{
+    color: rgb(255, 153, 0);
+}
+.review--card .icon span{
+    color: var(--text-color-darken);
+}
+.review--header h2{
+    padding: 1rem 0;
+}
+
+
+
+/* .splide__track{
+    overflow: visible;
+} */
+@media only screen and (max-width:767px){
+    .features--cards--container{
+        display: grid;
+            gap: 2rem;
+    }
+    .reviews{
+        width: 100%;
+        padding-top: 20%;
+        padding: 5% 10px;
+    }
+    .subscribe--section input{
+    width: 100%;
+    border: 1px solid var(--shadow-color)
+}
+.subscribe--section{
+    width: 100%;
+    padding: 20px;
+}
+.subscribe--section button{
+    right: 1.5%;
+}
+.reviews{
+    padding-top: 40%;
+}
+.review--card img{
+    right: 35%;
+}
+.review--card{
+    padding-top: 2.3rem;
+}
+}
+.error--section{
+    margin: 5% auto;
+    margin-bottom: 10%;
+    padding: 20px;
+    text-align: center;
+}
